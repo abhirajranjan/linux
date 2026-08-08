@@ -222,6 +222,7 @@ _nv_open_pkg="NVIDIA-kernel-module-source-${_nv_ver}"
 source=(
     "https://github.com/CachyOS/linux/releases/download/${_srctag}/${_srctag}.tar.gz"{,.asc}
     "config"
+    "./0004-soundwire-dmi-quirks-Disable-ghost-rt722-on-ASUS-Exp.patch"
 )
 validpgpkeys=(
   E18447AC260021D31F3FF6C4C8A2A4774B8B63C4  # Eric Naim <dnaim@cachyos.org>
@@ -821,4 +822,5 @@ done
 b2sums=('c7c6069c2423c68036c1eb630be26aef9aedda4dbf5ee8fc3db612aab090463ea8742347bde339978603a435b20c297040e8e9ccd73e4552f3b8072b07cabcd7'
         'SKIP'
         '3e0736c62f0ee45f47026ec9116352a2a411f484295ab416a1dedae44ea85bed8a3c3eadbc0fd7c21d99877112b331d27b55a8d01c6bbbc8cddae2145f5d922d'
+        '766ffd751442872128096da6e0a462c70cc9f3041907ae2a922fba11528d6db98513e0e7dcca3c5df83bf237800946827acf6a7ec2b30ba03f3d84a0f33d4e1b'
         'c992567bd7dd8553432be496ffa1c17e2f5ebe9c7edb51945cf977e1b742dd6517c210d8843bb82744ca705efd07f8027cd7dde41b50215ebd707a34aa81462e')
